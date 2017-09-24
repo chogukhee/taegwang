@@ -1,0 +1,423 @@
+out: ../css/style.min.css, sourcemap: false, compress: true
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p {margin:0; padding:0;}
+body {font-family: 'Oswald', "Malgun Gothic";}
+ul,ol,dl,li {list-style:none;}
+img {vertical-align:top; border:0;}
+input,button {vertical-align:middle;}
+a {text-decoration:none; color:#5b5b5b;}
+i {font-style:normal;}
+button {border: 0 none; padding: 0;}
+fieldset {padding: 0; margin: 0; border: 0 none;}
+input {border: 0 none; padding: 0; }
+button {background-color: transparent; border: 0 none;}
+
+.hide {font-size: 0; text-indent: -9999px;}
+.fr {float: right;}
+.fl {float: left;}
+
+.main {
+  width: 1920px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  .wrap {
+    // border:1px #f00 solid;
+    width: 1920px;
+    height: 100%;
+    header {
+      height: 80px;
+      background-color: #000;
+      position:relative;
+      h1 span{
+        display: block;
+        width: 62px;
+        height: 44px;
+        background-image: url(../images/logo.png);
+        position:absolute;
+        left:30px;
+        top:18px;
+        vertical-align: middle;
+      }
+      .btngroup {
+        display: inline-block;
+        // border:1px #f00 solid;
+        position: absolute;
+        right:10px;
+        top:22px;
+        button.home {
+          width: 40px;
+          height: 35px;
+          background-color: #222;
+          background-image: url(../images/home-icon.png);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        button.lang {
+          width: 45px;
+          height: 35px;
+          background-color: #086c6d;
+          font-family: "Malgun Gothic";
+          color:#fff;
+          size:12px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        button.site_option {
+          margin-left: 10px;
+          width: 40px;
+          height: 35px;
+          // border: 1px #f00 solid;
+          span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background-color: #fff;
+            margin:6px auto;
+          }
+        }
+      }
+      nav.menu {
+        width: 1200px;
+        margin:0 auto;
+        line-height: 80px;
+        white-space: nowrap; //자간 없애기
+        text-align: center;
+        li {
+          display: inline-block;
+          width: 220px;
+          a {
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+            // text-align: center;
+            // white-space: nowrap;
+            // display: block;
+            // text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+    section.video {
+      width: 100%;
+      height: 790px;
+      .video_wrap{
+        position: relative;
+        div {
+          // display: block;
+          width: 469px;
+          height: 132px;
+          position: absolute;
+          top:50%;
+          left:50%;
+          margin-top: -62px;
+          margin-left:-234.5px;
+          background-image: url(../images/m-slogan.png);
+        }
+      }
+    }
+    section.contents{
+      ul {
+        overflow: hidden;
+        li {
+          width: 33.33333%;
+          float: left;
+          position: relative;
+          .txt {
+            position: absolute;
+            top:50%;
+            left:0;
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+            font-size: 25px;
+            color:#fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            &:after {
+              content:"";
+              width: 20px;
+              height: 3px;
+              background-color: #fff;
+              position: absolute;
+              top:-22px;
+              left:50%;
+              margin-left:-10px;
+              display: block;
+            }
+          }
+          .img img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    section.map {
+      // background-color: #1d2227;
+      background-image: url(../images/global-bg.jpg);
+      background-repeat: repeat-x;
+      height: 900px;
+      position: relative;
+      h3 {
+        font-size: 42px;
+        text-transform: uppercase;
+        color:#fff;
+        text-align: center;
+        font-style: normal;
+        letter-spacing: 0.05em;
+        padding-top: 100px;
+        display: block;
+
+      }
+      .map_part {
+        width: 1332px;
+        height: 574px;
+        top:236px;
+        left:50%;
+        margin-left:-666px;
+        position: absolute;
+        p {
+          color : #fff;
+          font-size: 15px;
+          font-family: 'Calibri';
+          text-transform: uppercase;
+          position: absolute;
+        }
+        span {
+          display: block;
+          position :absolute;
+        }
+      }
+      .korea {
+        .line-01 {
+          width: 1px;
+          height: 27px;
+          background-color: rgba(255,255,255,0.4);
+        }
+        .line-02 {
+          width: 50px;
+          height: 1px;
+          background-color: rgba(255,255,255,0.4);
+        }
+      }
+      .usa {
+        .line-01 {
+          width: 1px;
+          height: 97px;
+          background-color: rgba(236,122,0,0.4);
+        }
+        .line-02 {
+          width: 166px;
+          height: 1px;
+          background-color: rgba(236,122,0,0.4);
+        }
+      }
+      .china {
+        .line-01 {
+          width: 1px;
+          height: 36px;
+          background-color: rgba(255,255,255,0.4);
+        }
+        .line-02 {
+          width: 60px;
+          height: 1px;
+          background-color: rgba(255,255,255,0.4);
+        }
+      }
+      .vietnam {
+        .line-01 {
+          width: 98px;
+          height: 1px;
+          background-color: rgba(255,255,255,0.4);
+        }
+        .line-02 {
+          width: 1px;
+          height: 22px;
+          background-color: rgba(255,255,255,0.4);
+        }
+        .line-03 {
+          width: 17px;
+          height: 1px;
+          background-color: rgba(255,255,255,0.4);
+        }
+      }
+      .indonesia {
+        .line-01 {
+          width: 47px;
+          height: 1px;
+          background-color: rgba(255,255,255,0.4);
+        }
+        .line-02 {
+          width: 1px;
+          height: 37px;
+          background-color: rgba(255,255,255,0.4);
+        }
+      }
+    }
+    section.social_activity {
+      ul {
+        &:after {
+          content: "";
+          clear: both;
+          display: block;
+        }
+        li {
+          // border: 1px #f00 solid;
+          width: 50%;
+          float: left;
+          position: relative;
+          img {
+            width: 100%;
+          }
+          strong {
+            position: absolute;
+            width: 440px;
+            height: 22px;
+            display: block;
+            top: 50%;
+            margin-top:-11px;
+            left:50%;
+            margin-left:-220px;
+            font-size: 25px;
+            color:#fff;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            text-align: center;
+            &:after {
+              content: "";
+              width: 20px;
+              height: 3px;
+              background-color: #fff;
+              display: block;
+              position: absolute;
+              left:50%;
+              top:-22px;
+            }
+            &+span {
+              font-family: "Malgun Gothic";
+              width: 440px;
+              height: 20px;
+              display: block;
+              position: absolute;
+              top:60%;
+              margin-top:-10px;
+              left:50%;
+              margin-left:-220px;
+              color:#fff;
+              font-size: 20px;
+              font-weight: 300;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    section.banner {
+      overflow: hidden;
+      .bg {
+        width: 1920px;
+        height: 835px;
+        display: block;
+        background-image: url(../images/add-bg.jpg);
+        position: relative;
+        .txt {
+          width: 321px;
+          height: 170px;
+          display: block;
+          background-image: url(../images/add-txt.png);
+          position: absolute;
+          top:110px;
+          right:200px;
+        }
+      }
+    }
+    footer {
+      width: 100%;
+      height: 355px;
+      background-color: #080808;
+      position: relative;
+      z-index: 1;
+      .footer_top {
+        width: 100%;
+        height: 72px;
+        line-height: 72px;
+        position: absolute;
+        top:0;
+        z-index: 10;
+        background-color: #191919;
+        ul {
+          width: 1200px;
+          margin:0 auto;
+          li {
+            width: 50%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            a {
+              color:#e8e8e8;
+              font-size: 14px;
+              span{
+                position: relative;
+                padding: 0 30px 0 40px;
+                background-image: url(../images/footer_top_icon3.png);
+                background-repeat: no-repeat;
+                background-position: right center;
+                &:before {
+                  width: 26px;
+                  height: 26px;
+                  display: inline-block;
+                  position: absolute;
+                  top:-2px;
+                  left:0;
+                  content: "";
+                  background-image: url(../images/footer_top_icon1.png);
+                  background-position: 0 center;
+                }
+              }
+              .second:before {
+                content: "";
+                background-image: url(../images/footer_top_icon2.png);
+                background-position: 0 center;
+                background-repeat: no-repeat;
+              }
+            }
+          }
+        }
+      }
+      .footer{
+        font-family: "Malgun Gothic";
+        width: 1200px;
+        margin: 0 auto;
+        padding-top:72px;
+        div {
+          padding:84px 0 0;
+          text-align: center;
+          .logo  {
+            width: 67px;
+            height: 47px;
+            margin-bottom: 30px;
+            display: inline-block;
+            background-image: url(../images/f-logo.png);
+          }
+          .info {
+            color:#b5b5b5;
+            font-size: 14px;
+            display: block;
+            text-align: center;
+          }
+          .copyright {
+            color: #535353;
+            margin-top:5px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

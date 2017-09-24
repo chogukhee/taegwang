@@ -1,0 +1,26 @@
+{
+  "name": "taegwang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^1.1.0",
+    "less": "^2.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chogukhee/taegwang.git"
+  },
+  "author": "조국희",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chogukhee/taegwang/issues"
+  },
+  "homepage": "https://github.com/chogukhee/taegwang#readme"
+}
