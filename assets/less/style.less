@@ -84,9 +84,11 @@ button {background-color: transparent; border: 0 none;}
         line-height: 80px;
         white-space: nowrap; //자간 없애기
         text-align: center;
-        li {
+        &>ul>li {
           display: inline-block;
           width: 220px;
+          vertical-align: top;
+          border-bottom:3px #008889 solid;
           a {
             color: #fff;
             font-size: 16px;
@@ -98,6 +100,9 @@ button {background-color: transparent; border: 0 none;}
             // white-space: nowrap;
             // display: block;
             // text-overflow: ellipsis;
+            &:hover {
+              color:#008889;
+            }
           }
         }
       }
@@ -127,8 +132,33 @@ button {background-color: transparent; border: 0 none;}
           width: 33.33333%;
           float: left;
           position: relative;
+          overflow: hidden;
+          a {
+            // position: relative;
+            // z-index: 1;
+            &:after {
+              content:"";
+              background-color: rgba(0,131,132,0.5);
+              opacity: 0;
+              width:100%;
+              height: 100%;
+              display: block;
+              position: absolute;
+              top:0;
+              left:0;
+              z-index: 3;
+            }
+            &:hover:after {
+              opacity: 1;
+            }
+            &:hover img {
+              transform: scale(1.08);
+
+            }
+          }
           .txt {
             position: absolute;
+            z-index: 5;
             top:50%;
             left:0;
             width: 100%;
@@ -153,6 +183,7 @@ button {background-color: transparent; border: 0 none;}
           }
           .img img {
             width: 100%;
+            transition: 1.8s;
           }
         }
       }
@@ -271,11 +302,34 @@ button {background-color: transparent; border: 0 none;}
           width: 50%;
           float: left;
           position: relative;
+          overflow: hidden;
+          a {
+            &:after {
+              content:"";
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: rgba(0,131,132,0.5);
+              opacity: 0;
+              position: absolute;
+              top:0;
+              left:0;
+              z-index: 3;
+            }
+            &:hover:after {
+              opacity: 1;
+            }
+            &:hover img {
+              transform: scale(1.08);
+            }
+          }
           img {
             width: 100%;
+            transition: 1.8s;
           }
           strong {
             position: absolute;
+            z-index: 5;
             width: 440px;
             height: 22px;
             display: block;
@@ -305,6 +359,7 @@ button {background-color: transparent; border: 0 none;}
               height: 20px;
               display: block;
               position: absolute;
+              z-index: 5;
               top:60%;
               margin-top:-10px;
               left:50%;
@@ -326,6 +381,10 @@ button {background-color: transparent; border: 0 none;}
         display: block;
         background-image: url(../images/add-bg.jpg);
         position: relative;
+        &:hover .txt {
+          opacity: 1;
+          background-image: url(../images/add-txt.png);
+        }
         .txt {
           width: 321px;
           height: 170px;
@@ -334,6 +393,9 @@ button {background-color: transparent; border: 0 none;}
           position: absolute;
           top:110px;
           right:200px;
+          opacity: 0;
+          transition-duration: 3s;
+          transition-delay: 0.5s;
         }
       }
     }
